@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffd0eb;
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+    color: #661343
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+}
+
+.board * {
+    border: 0.1rem solid #44072a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.category-title {
+    background-color: #661343;
+    color: #fff;
+    grid-row-start: 1;
+    text-transform: uppercase;
+}
+
+.category-clue {
+    font-size: 2rem;
+}
